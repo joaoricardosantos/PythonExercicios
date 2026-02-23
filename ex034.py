@@ -1,5 +1,5 @@
 sal = float(input('Digite o seu salário: R$'))
-if sal > 1.250:
+if sal > 1250:
     novoSal = (sal * 10) / 100 + sal
 else:
     novoSal = (sal * 15) / 100 + sal
