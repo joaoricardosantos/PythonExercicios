@@ -1,4 +1,5 @@
 import  random
+from time import  sleep
 
 print('Bem vindo ao jogo de JOKENPÔ!')
 print('=-'*20)
@@ -9,6 +10,12 @@ print('[3] TESOURA')
 print('=-'*20)
 computador = random.randint(1, 3)
 escolha = int(input('Escolha a sua jogada: '))
+print('JO')
+sleep(1)
+print('KEN')
+sleep(1)
+print('PÔ')
+sleep(1)
 if escolha == computador:
     print('EMPATE!')
 elif escolha == 2 and computador == 1:

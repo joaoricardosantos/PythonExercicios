@@ -1,8 +1,13 @@
-valor = float(input('Digite o valor da casa: R$'))
-sal = float(input('Qual é o seu salário? R$'))
-anos = int(input('Em quantos anos você irá pagar? '))
-parcela = valor / (anos / 12)
-if parcela > (sal * 30)/ 100:
-    print('Emprestimo negado!')
+casa = float(input('Valor da casa: R$'))
+sal = float(input('Salário do comprador: R$'))
+anos = int(input('Quantos anos de finaciamento? '))
+prestacao = casa / (anos * 12)
+minimo = sal * 30 / 100
+print(f'Para pagar uma casa de R${casa:.2f} em {anos} anos', end='')
+print(f'a prestação será de R${prestacao:.2f}')
+
+if prestacao > minimo:
+    print(f'EMPRESTIMO NEGADO')
+
 else:
-    print(print('Emprestimo aprovado!'))
+    print('EMPRESTIMO APROVADO')
