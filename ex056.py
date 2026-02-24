@@ -17,5 +17,5 @@ for c in range(0, 4):
 mediaIdade = totalIdade / 4
 
 print(f'A media da idade é de {mediaIdade}')
-print(f'O nome do homem mais velho é {nVelho}')
+print(f'O nome do homem mais velho é {nVelho} e ele tem {hVelho} anos')
 print(f'Quantidade de mulheres com menos de 20 anos {m20}')
