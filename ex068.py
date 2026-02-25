@@ -9,7 +9,7 @@ s = 0
 while d < 1:
     computador = random.randint(0, 10)
     jogador = int(input('VALOR: '))
-    pi = str(input('PAR OU ÍMPAR? [P/I]: ')).upper().strip()
+    pi = str(input('PAR OU ÍMPAR? [P/I]: ')).upper().strip()[0]
     print('--'*20)
     s = jogador + computador
     if s % 2 == 0:
