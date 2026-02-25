@@ -1,11 +1,11 @@
-resp = ''
+resp = 'S'
 tot = maior = menor = media = 0
 
-while not resp == 'N':
+while resp in 'S':
     n = int(input('Digite um número: '))
     media += 1
     tot += n
-    if resp == '':
+    if resp == 'S':
         menor = n
         maior = n
     else:
