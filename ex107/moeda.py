@@ -1,18 +1,15 @@
-def metade(valor):
+def metade(valor=0):
     valor = valor / 2
     return  valor
 
-def dobro(valor):
+def dobro(valor=0):
     valor = valor * 2
     return valor
 
-def aumento(valor, por):
+def aumento(valor=0, por = 0):
     valor = (valor * por / 100) + valor
     return valor
 
-def reduzir(valor, por):
+def reduzir(valor=0, por = 0):
     valor = valor - (valor * por / 100)
     return valor
-
-def moeda(valor=0, moeda ='R$'):
-    return f'{moeda}{valor:.2f}'.replace('.', ',')
